@@ -13,7 +13,6 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
-	video.volume = 1.0;
 	volume_display = Math.floor(video.volume * 100)
 	document.getElementById('volume').innerHTML = (volume_display.toString() + '%');
 	console.log('Volume is set to ' + video.volume);
